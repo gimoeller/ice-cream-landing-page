@@ -47,11 +47,11 @@ nav span {
 nav .menu ul {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
     margin-left: 10rem;
 }
 
 nav .menu ul li {
+    margin-left: 3rem;
     list-style: none;
 }
 
@@ -124,6 +124,7 @@ main section.image img:hover {
     height: 100%;
     background: var(--circle1-color);
     clip-path: circle(50% at 95% 10%);
+    -webkit-clip-path: circle(50% at 95% 10%);
     z-index: -1;
 }
 
@@ -135,6 +136,7 @@ main section.image img:hover {
     height: 100%;
     background: var(--circle2-color);
     clip-path: circle(20% at center 90%);
+    -webkit-clip-path: circle(20% at center 90%);
     z-index: -1;
 }
 
@@ -146,6 +148,7 @@ main section.image img:hover {
     height: 100%;
     background: var(--circle3-color);
     clip-path: circle(10% at 5% 30%);
+    -webkit-clip-path: circle(10% at 5% 30%);
     z-index: -1;
 }
 
@@ -200,6 +203,7 @@ main section.image img:hover {
 
     .circle-1 {
         clip-path: circle(25% at 95% 10%);
+        -webkit-clip-path: circle(25% at 95% 10%);
     }
     
     .circle-2 {
@@ -208,6 +212,7 @@ main section.image img:hover {
     
     .circle-3 {
         clip-path: circle(10% at 5% 30%);
+        -webkit-clip-path: circle(10% at 5% 30%);
     }
 }
 
@@ -240,5 +245,12 @@ main section.image img:hover {
 
     main section .buttons button:first-child {
         width: 100%;
+    }
+}
+
+@media (max-height: 800px) {
+    main section.image img {
+        width: 100%;
+        margin-top: -5rem;
     }
 }
